@@ -1,5 +1,4 @@
 // Joe got it first :D
-
 function count8s(num) {
   let counter = 0;
   for (let i = 1; i <= num; i++) {
@@ -22,6 +21,13 @@ function getEights() {
     }
     console.log(count);
 }
+
+// Ideal solution!
+function countEight (number) {
+  let array = Array.from(new Array(number), (x,i) => i + 1);
+  return array.join("").split("8").length-1
+}
+
 
 
 // ****** FUCK COMPUTER, MATH WAY!!! :P ******
